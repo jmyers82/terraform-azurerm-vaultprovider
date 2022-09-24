@@ -1,5 +1,5 @@
 provider "vault" {
-  address   = "https://vault-cluster.vault.55ff1c17-5f2b-42aa-b7a3-78c6a1ac9b80.aws.hashicorp.cloud:8200"
+  address   = "https://vault-cluster-public-vault-a02ab7e1.7dfb5d47.z1.hashicorp.cloud:8200"
   namespace = var.namespace
   token     = var.vault_token
 }

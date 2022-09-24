@@ -14,7 +14,7 @@ variable "subscription_id" {
 
 variable "tenant_id" {
   type = string  
-  default = "a7499e28-6a7f-48d9-8b14-d3e690989660"
+  default = "46eb567a-7cf3-48cc-9a90-f6deab9bb040"
 }
 
 variable "num_sequential_successes" {

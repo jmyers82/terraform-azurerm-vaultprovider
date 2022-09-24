@@ -9,7 +9,7 @@ A temporary SPN will be created in Azure Active Directory with a name that start
 # Example Usage
 ```
 module "vaultprovider" {
-  source  = "app.terraform.io/weyerhaeuser/vaultprovider/azurerm"
+  source  = "app.terraform.io/hashiconf22/vaultprovider/azurerm"
   version = "~>1.0"
   vault_token = var.vault_token
   subscription_id = var.subscription_id
