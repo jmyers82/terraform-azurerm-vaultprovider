@@ -1,7 +1,17 @@
 provider "vault" {
   address   = "https://vault-cluster-public-vault-a02ab7e1.7dfb5d47.z1.hashicorp.cloud:8200"
   namespace = var.namespace
-  token     = var.vault_token
+  # token     = var.vault_token
+  auth_login {
+    path = "auth/approle/login"
+
+    parameters = {
+      role_id   = var.login_approle_role_id
+      secret_id = var.login_approle_secret_id
+    }
+  }
+
+
 }
 
 data "vault_azure_access_credentials" "get_creds" {
